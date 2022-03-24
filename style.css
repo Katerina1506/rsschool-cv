@@ -23,16 +23,16 @@ html {
 header {
     background-image: url(./assets/bg_img.jpeg); 
 }
+ h1, h2 {
+    font-family: 'Martel', serif;
 
-/* section {
-    background-color: #E5E5E5;
-} */
+ }
 
 /* Container */
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -58,6 +58,7 @@ header {
 
 .nav__item a{
     font-size: 16px;
+    font-family: 'Martel', serif;
     padding-right: 20px ;
     text-decoration: none; 
     color: #926b48;   
@@ -80,15 +81,23 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    width: 1000px;
+    width: 100%;
     padding: 30px;
     margin: auto;
+    max-width: 1100px;
 }
 
 .section {
     width: 50%;
     padding-bottom: 30px;
 }
+
+@media (max-width: 1040px) {
+    .section {
+        width: 100%;
+    }
+}
+
 .section__name{
     position: relative;
 }
@@ -120,6 +129,8 @@ header {
 .name {
     color:#8c5f34;
     font-size: 30px;
+    font-family: 'Martel', serif;
+    font-weight: 700;
 }
 
 .staff {
@@ -127,6 +138,8 @@ header {
     text-align: right;
     color: #b08862;
     font-size: 16px;
+    font-family: 'Martel', serif;
+
 }
 
 .staff::after {
