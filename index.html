@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <!-- <img src="./assets/img.jpg" alt="my photo"> -->
+    <!-- <link rel="icon" href="/assets/favico.ico"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@400;700&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <title>CV</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#My Contact Info" class="nav-link">Contact Info</a></li>
+                        <li class="nav__item"><a href="#About me" class="nav-link">About me</a></li>
+                        <li class="nav__item"><a href="#Skills" class="nav-link">Skills</a></li>
+                        <li class="nav__item"><a href="#Code Example" class="nav-link">Code Example</a></li>
+                        <li class="nav__item"><a href="#Courses" class="nav-link">Courses</a></li>
+                        <li class="nav__item"><a href="#Languages" class="nav-link">Languages</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <section class="profile" id="profile">
+            <div class="container">
+                <div class="personal__info">
+                    <div class="photo">
+                        <img src="./assets/img.jpg" alt="my photo">
+                    </div>
+                    <div class="personal_content">
+                        <h1 class="name">Ekaterina Vabischevich</h1>
+                        <div class="staff">Junior Frontend Developer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="section" id="contacts">
+            <div class="container">
+                <h2 class="section__name">Contact Info</h2>
+                    <div class="contact__item">
+                        <img class="contact__logo" src="./assets/logo/map.png" alt="">
+                        <i>Belarus, Minsk</i>
+                    </div>
+                    <div class="contact__item">
+                        <img class="contact__logo" src="./assets/logo/phone.png" alt="">
+                        <i>Phone: </i><a href="#">+375(29)732-81-92</a>
+                    </div>
+                    <div class="contact__item"> 
+                        <img class="contact__logo" src="./assets/logo/mail.png" alt="">
+                        <i>E-mail: </i><a href="https://gmail.com/katyavabi@gmail.com">katyavabi@gmail.com</a>
+                    </div>
+                    <div class="contact__item"> 
+                        <img class="contact__logo" src="./assets/logo/github.png" alt="">
+                        <i>GitHub: </i><a href="https://github.com/Katerina1506">Katerina1506</a>
+                    </div>
+                    <div class="contact__item"> 
+                        <img class="contact__logo" src="./assets/logo/telegram.png" alt="">
+                        <i>Telegram: </i><a href="#">@aniretakkkk</a>
+                    </div>
+                    
+            </div>
+        </section>
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section__name">About me</h2>
+                <p>I started my career as a layout designer and now 
+                    I want to improve my knowledge in coding because 
+                    I have always wanted learn new things. I learn 
+                    easily and enjoy working in a team. I want to get 
+                    knowledge and skills to become a professional in your field.</p>
+            </div>
+
+        </section>
+        <section class="section" id="skills">
+            <div class="container">
+                <h2 class="section__name">Skills</h2>
+                <ul class="list">
+                    <div class="list_item">HTML</div>
+                    <div class="list_item">CSS (Bootstrap, SASS/SCSS, BEM)</div>
+                    <div class="list_item">JavaScript Basics</div>
+                    <div class="list_item">Git/GitHub</div>
+                    <div class="list_item">VS Code</div>
+                    <div class="list_item">Figma(for web development)</div>
+                </ul>   
+            </div>
+        </section>
+        <section class="section" id="my_code">
+            <div class="container">
+                <h2 class="section__name">Code Example</h2>
+                <pre class="code">
+function unusedDigits(...arr){
+  let arrNum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  arr = arr.join('');
+  for (let i = 0; i < arr.length; i++) {
+    if (arrNum.indexOf(parseInt(arr[i])) !== -1) {
+      arrNum.splice(arrNum.indexOf(parseInt(arr[i])), 1)
+      };
+  };
+  return arrNum.join('');
+}
+                </pre>
+            </div>
+        </section>
+        <section class="section" id="languages">
+            <div class="container">
+                <h2 class="section__name">Languages</h2>
+                <ul class="list">
+                    <div class="list_item">English (B1)</div>
+                    <div class="list_item">Russia ( Native)</div>
+                </ul> 
+            </div>
+        </section>
+
+        <section class="section" id="courses">
+            <div class="container">
+                <h2 class="section__name">Courses</h2>
+                <ul class="list">
+                    <div class="list_item">HTML and CSS Tutorials on the w3schools (completed)</div>
+                    <div class="list_item">JavaScript Manual on learnjavascript.ru (in progress)</div>
+                    <div class="list_item">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</div>
+                </ul>  
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="container">
+            <div class="year">© 2022</div>
+        </div>
+    </div>
+</body>
+</html>
